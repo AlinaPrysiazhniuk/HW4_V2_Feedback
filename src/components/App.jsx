@@ -14,15 +14,15 @@ export default function App() {
   const updateCountFeedback = value => {
     switch (value) {
       case 'good':
-        setGood(prevGood => prevGood + 1);
+        setGood(good + 1);
         break;
 
       case 'neutral':
-        setNeutral(prevNeutral => prevNeutral + 1);
+        setNeutral(neutral + 1);
         break;
 
       case 'bad':
-        setBad(prevBad => prevBad + 1);
+        setBad(bad + 1);
         break;
 
       default:
