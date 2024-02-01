@@ -1,0 +1,26 @@
+  
+.button_feedback {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition-duration: 250ms;
+    border-radius: 3px;
+    border-style: hidden;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  .button_feedback:nth-child(1) {
+    background-color: rgb(94, 160, 94);
+  }
+  .button_feedback:nth-child(2) {
+    background-color: rgb(229, 229, 74);
+  }
+  .button_feedback:nth-child(3) {
+    background-color: red;
+  }
+  
+  .button_feedback:hover {
+    transform: scale(1.1);
+  }
