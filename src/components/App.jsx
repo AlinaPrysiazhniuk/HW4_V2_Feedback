@@ -30,13 +30,14 @@ export default function App() {
     }
   };
 
-  const countTotalFeedback = () =>
-    Object.values(state).reduce((total, value) => total + value, 0);
+  const countTotalFeedback = () => {
+    return good + bad + neutral;
+  };
 
   const countPositiveFeedbackPercentage = () => {
-    return countTotalFeedback()
-      ? ((good / countTotalFeedback()) * 100).toFixed(0)
-      : '0';
+    const total = countTotalFeedback();
+
+    return total ? ((good / total) * 100).toFixed(0) : '0';
   };
 
   return (
